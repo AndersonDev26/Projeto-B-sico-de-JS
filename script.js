@@ -1,11 +1,10 @@
 
 
 function adicionarTarefa() {
+
+
    let mensagem = "Tarefa adicionada com sucesso!";
    let mensagemerro = "Erro!"
-
-
-
    let inputtarefa = document.getElementById("inputtarefa")
    let tarefa = inputtarefa.value.trim()
 

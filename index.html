@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ptt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico JS</title>
+</head>
+<body>
+     <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <p>Adicione suas tarefas!</p>
+        <input type="text" id="inputtarefa" placeholder="Digite Sua Tarefa">
+        <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+        <p id="mensagem"></p>
+        <ul id="listatarefas"></ul>
+    </div>
+
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #131010; 
+            }
+            .container {
+                text-align: center;
+                background-color: #aaaaaa2c;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 90%;
+                max-width: 600px;
+                border: 2px solid #ffffffc0;
+            }
+            h1 {
+                color: #ffffff;
+            }
+            p {
+                color: #ffffff;
+                font-size: 1.1em;
+            }
+            button {
+                background-color: #ffffff23;
+                color: #F4F0EA;
+                padding: 10px 20px;
+                border: solid 1px #fff;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1em;
+                transition: background-color 0.3s ease;
+                margin-top: 1px;
+            }
+            button:hover {
+                background-color: #686868;
+            }
+
+            #mensagem{
+                margin-bottom: 15px;
+                
+            }
+            ul {
+                list-style: none;
+                padding: 0;
+                margin-top: 20px;
+            }
+            ul li {
+                background-color: #F4F0EA;
+                color: #331F19;
+                padding: 10px;
+                margin: 5px 0;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Estilo para o campo de entrada */
+            input[type="text"] {
+                padding: 10px;
+                width: 80%;
+                max-width: 500px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                border: 2px solid #ffffff;
+                border-radius: 5px;
+                font-size: 20px;
+                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+                outline: none;
+                transition: border-color 0.3s ease;
+                
+            }
+            input[type="text"]:focus {
+                border-color: #ebebeb;
+                box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+        
+            }
+            </style>
+            
+ </body>
+ <script src="./script.js"></script>
+</html>
